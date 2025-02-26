@@ -2,16 +2,16 @@
  
  import Navbar from '../navbar/Navbar';
 import styles from './userdetails.module.css'
-import userDetails from './userDetails'
+import user from './user';
 import { useState } from 'react';
 const UserDetails = () =>{
-        const [filteredUsers, setFilteredUsers] = useState(userDetails);
+        const [filteredUsers, setFilteredUsers] = useState(user);
       
         const filterUsers = (gender) => {
           if (gender === "all") {
-            setFilteredUsers(userDetails);
+            setFilteredUsers(user);
           } else {
-            setFilteredUsers(userDetails.filter((user) => user.gender === gender));
+            setFilteredUsers(user.filter((user) => user.gender === gender));
           }
         }
     return (

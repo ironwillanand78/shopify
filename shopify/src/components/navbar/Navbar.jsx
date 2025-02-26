@@ -1,24 +1,32 @@
-import React from 'react'
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
-import styles from './navbar.module.css'
+import styles from "./navbar.module.css";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("auth"); 
+    navigate("/login"); 
+  };
+
   return (
     <div className={styles.navbar}>
       <ul>
-        <li ><button><a href=""> Home  </a></button>  </li>
-        <li ><button><a href="">Product</a></button></li>
-        <li ><button><a href="">User </a></button>  </li>
-        <li ><button><a href="">Contact</a></button></li>
+        <li><button><Link to="/">Home</Link></button></li>
+        <li><button><Link to="/product">Product</Link></button></li>
+        <li><button><Link to="/user">User</Link></button></li>
+        <li><button><Link to="/contact">Contact</Link></button></li>
         <li>
-        <button>
-            <a href=""><FontAwesomeIcon icon={faRightFromBracket} /></a>
-        
-        </button>
+          <button onClick={handleLogout}>
+            <FontAwesomeIcon icon={faRightFromBracket} /> Logout
+          </button>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

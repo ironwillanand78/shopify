@@ -1,5 +1,5 @@
 
-    const userDetails =  [
+    const user =  [
         {
           "name": "Dalia Menchaca",
           "email": "dalia.menchaca@example.com",
@@ -104,4 +104,4 @@
         }
       ]
       
-    export default userDetails;
+    export default user;
