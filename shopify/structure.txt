@@ -1,0 +1,6 @@
+{login page } => {check for authenticaiton , local storage , github and google using firebase}
+{error if the credentials do not match ..... else login sucessfull and route to the main page}
+{home page component} =>{Navebar  , a section with a about}
+{narbar component} =>{home , product , users{filter-search} , contact(under development) , logout btn}
+{product component} => {products under different sections }
+{user component} => {different user details (gender search fun given) }
