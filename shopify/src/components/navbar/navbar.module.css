@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    background-color: #242323;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    padding-right: 4rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 80px;
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove any browser default padding */
+    margin: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: crimson;
+}
+
+ul li button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li button:hover {
+    color: crimson;
+}
