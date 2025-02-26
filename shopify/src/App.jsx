@@ -1,6 +1,14 @@
 
-import styles from './App.module.css'
+// import styles from './App.module.css'
 
-const App = () =>{}
+import Login from "./components/login/Login";
+
+const App = () =>{
+  return(
+    <div>
+      <Login/>
+    </div>
+  )
+}
 export default App;
 
