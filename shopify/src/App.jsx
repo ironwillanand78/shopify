@@ -1,22 +1,27 @@
-
-// import styles from './App.module.css'
-
-import Contact from "./components/Contact/Contact";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Login from "./components/login/Login";
-import Navbar from "./components/navbar/Navbar";
-import UserDetails from "./components/userDetail/UserDetails";
+import CreateAccount from "./components/CreateAccount";
 
-const App = () =>{
-  return(
-    <div>
-      {/* <Login/> */}
-      {/* <Navbar/> */}
-      {/* <Home/> */}
-      {/* <Contact/> */}
-      <UserDetails/>
-    </div>
-  )
-}
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/create-account" element={<CreateAccount />} />
+      </Routes>
+    </Router>
+  );
+};
+
 export default App;
+
+
+
+
+
+
+
 
