@@ -1,5 +1,5 @@
 import React from 'react'
-
+import loginDiv_img from './loginDiv_img.jpeg'
 import styles from './login.module.css'
 const Login = () => {
   return (
@@ -25,7 +25,7 @@ const Login = () => {
 
         </div>
       </div>
-      <div className={styles.rightDiv}></div>
+      <div className={styles.rightDiv}><img src={loginDiv_img} /></div>
     </div>
   )
 }
